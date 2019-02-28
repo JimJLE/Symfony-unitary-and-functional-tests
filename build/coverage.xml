@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1551176374">
+  <project timestamp="1551176374">
+    <package name="App\Controller">
+      <file name="C:\Developpements\tmp\news-website\src/Controller/NewsController.php">
+        <class name="App\Controller\NewsController" namespace="App\Controller">
+          <metrics complexity="4" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="17" coveredelements="0"/>
+        </class>
+        <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="22" type="method" name="index" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="32" type="method" name="item" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <metrics loc="39" ncloc="33" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="17" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App">
+      <file name="C:\Developpements\tmp\news-website\src/Kernel.php">
+        <class name="App\Kernel" namespace="App">
+          <metrics complexity="5" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="26" coveredelements="0"/>
+        </class>
+        <line num="18" type="method" name="registerBundles" visibility="public" complexity="3" crap="12" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="method" name="configureContainer" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="40" type="method" name="configureRoutes" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <metrics loc="48" ncloc="48" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="26" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Repository">
+      <file name="C:\Developpements\tmp\news-website\src/Repository/NewsRepository.php">
+        <class name="App\Repository\NewsRepository" namespace="App\Repository">
+          <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="20" type="method" name="findAll" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="25" type="method" name="findOneBySlug" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <metrics loc="28" ncloc="28" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="3" loc="115" ncloc="109" classes="3" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="0" elements="51" coveredelements="0"/>
+  </project>
+</coverage>

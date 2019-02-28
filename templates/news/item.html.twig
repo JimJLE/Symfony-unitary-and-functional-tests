@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ item.title }}{% endblock %}
+
+{% block body %}
+   <h1>{{ item.title }}</h1>
+   {{ item.body }}
+
+
+<form id="post-comment">
+            <textarea id="new-comment" cols="50" rows="5" name="new-comment" v-model="newComment"
+                      placeholder="Your opinion matters! Send us your comment.">test</textarea>
+
+            <input type="submit" :disabled="!newComment">
+        </form>
+{% endblock %}
