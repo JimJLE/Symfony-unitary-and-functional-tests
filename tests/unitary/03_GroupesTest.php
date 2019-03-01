@@ -17,7 +17,7 @@ class TroisiemeTest extends TestCase
     }
 
     /**
-     * @group Metier
+     * @group Autre
      */
     public function testMetier() {
         $voiture = "rouge";

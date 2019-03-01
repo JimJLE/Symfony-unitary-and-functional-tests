@@ -6,6 +6,12 @@ Installation des composants
 composer install
 ```
 
+Utilisation de make pour créer des classes de tests
+```bash
+php bin/console make:unit-test
+php bin/console make:functional-test
+```
+
 ## Tests Unitaires
 ```bash
 ./bin/phpunit test/unitary/01_FirstUnitaryTest.php --no-logging
@@ -22,7 +28,14 @@ composer install
 ./bin/phpunit test/unitary/12_MockTest.php --no-logging
 ```
 
-Fixitures en manuel
+Base de données en manuel
+```bash
+doctrine:database:drop --force   # Suppression DB
+doctrine:database:create         # Création DB
+doctrine:schema:create			 # Création structure
+```
+
+Fixtures en manuel
 ```bash
 php ./bin/console doctrine:fixtures:load
 ```
@@ -30,7 +43,7 @@ php ./bin/console doctrine:fixtures:load
 Groupes
 ```bash
 php ./bin/phpunit --group Unit
-php ./bin/phpunit –list-groups
+php ./bin/phpunit --list-groups
 ```
 
 TestSuite
@@ -44,8 +57,6 @@ php ./bin/phpunit --testsuite Unit,Integration
 ## Tests fonctionnels avec navigateur simulé
 ```bash
 ./bin/phpunit test/functional/01_NewsControllerTest.php --no-logging
-PANTHER_NO_HEADLESS=1 ./bin/phpunit test/panthera/01_NewsControllerTest.php --no-logging
-PANTHER_NO_HEADLESS=1 ./bin/phpunit test/functional/02_JavascriptTest.php --no-logging
 ```
 
 ## Tests fonctionnels avec navigateur

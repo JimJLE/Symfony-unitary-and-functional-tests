@@ -22,6 +22,7 @@ class NewsControllerTest extends PantherTestCase
             'symfony-functional-testing',
             'symfony-unitary-testing'
         ], $crawler->filter('article')->extract('id'));
+        sleep(5);//juste pour demo
         // On récupère le lien et on clique dessus
         $link = $crawler->selectLink('Les tests unitaires avec Symfony 4')->link();
         $crawler = $client->click($link);
@@ -35,6 +36,7 @@ class NewsControllerTest extends PantherTestCase
 	public function testComments()
     {
         $client = static::createPantherClient();
+        // Utilisez le router pour générer vos routes, ne les mettez pas en dur comme ici.
         $crawler = $client->request('GET', '/news/symfony-unitary-testing');
         
         sleep(5);//juste pour demo
@@ -45,7 +47,7 @@ class NewsControllerTest extends PantherTestCase
 		$today = new \DateTime("now", new \DateTimeZone("Europe/Paris"));
 		$date = $today->format("Ymd");
 		$client->takeScreenshot($date.'_testComments.png');
-        sleep(5);//juste pour demo
+        sleep(10);//juste pour demo
         
         // On vérifie que le contenu du textarea correspond bien à l'attendu.
         // Aucun js ne l'a modifié...
